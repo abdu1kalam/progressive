@@ -41,14 +41,14 @@ const APP = {
       let btn = document.getElementById("btnInstall");
       btn?.addEventListener("click", APP.startChromeInstall);
     }
-    
+
     const notifyBtn = document.getElementById("notify-btn");
     notifyBtn.addEventListener("click", () => {
       Notification.requestPermission().then((permission) => {
         if (permission === "granted") {
           navigator.serviceWorker.getRegistration().then((reg) => {
-            reg.showNotification("Hello!", {
-              body: "This is a push notification.",
+            reg.showNotification("Welcome!", {
+              body: "Thank you for installing our app! Click here to explore.",
               icon: "icon.svg",
             });
           });
