@@ -1,7 +1,7 @@
 {
   "name": "Web App",
   "short_name": "App",
-  "start_url": ".",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "description": "A simple web app for testing installation and push notifications.",
@@ -11,5 +11,8 @@
       "sizes": "192x192",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "orientation": "portrait-primary",
+  "theme_color": "#bada55",
+  "prefer_related_applications": false
 }
